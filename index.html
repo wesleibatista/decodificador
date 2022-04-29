@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Decodificador</title>
+</head>
+<body>
+    <header>
+        <h1><strong>a</strong></h1>
+    </header>
+    <div class="container">
+        <section class="col">
+            <textarea name="name" id="input" cols="30" rows="9" placeholder="Digite seu texto"></textarea>
+            <section id="alert">
+                <img src="./img/Alert-icon.svg">
+                <span>Apenas letras minúsculas e sem acento.</span>
+            </section>
+            <section class="row">
+                <button id="encrypt">Criptografar</button>
+                <button id="decrypt">Decriptografar</button>
+            </section>
+        </section>
+        <div id="output-none" class="col">
+            <img src="./img/Person-looking.svg" alt="procurando">
+            <p><strong>Nenhuma mensagem encontrada</strong></p>
+            <br>
+            <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+        </div>
+        <div id="output" class="col">
+            <textarea name="name" id="text-output" cols="30" rows="30" readonly></textarea>
+            <button id="copy">Copiar</button>
+        </div>
+    </div>
+    <footer>&copy; Weslei Batista - 2022</footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,7 +1,7 @@
 function checkText() {
     let text = document.querySelector("#input").value.split(" ").join("");
     const TEXT = text.split("\n").join("");
-    const PATERN = "abcdefghijklmnopqrstuvwxyz";
+    const PATERN = "abcdefghijklmnopqrstuvwxyz.,;:!?\"'()-";
     let isValid;
 
     for(let i = 0; i < TEXT.length; i++) {
